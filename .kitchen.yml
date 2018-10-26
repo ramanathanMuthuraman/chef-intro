@@ -23,3 +23,6 @@ suites:
   - name: default
     run_list:
       - recipe[chef_example::default]
+    attributes:
+      chef_example:
+        foo: foo-value-override
